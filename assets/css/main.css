@@ -2667,7 +2667,7 @@ input, select, textarea {
 
   /* Next & previous buttons */
   .prev, .next {
-    cursor: pointer;
+    cursor: pointer !important;
     position: absolute;
     top: 50%;
     width: auto;
@@ -2693,12 +2693,14 @@ input, select, textarea {
 
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
+    background-color: rgba(0,0,0,0.8) !important;
+    color: white !important;
   }
 
   /* The dot/bullet/indicator container */
   .dot-container {
+    width: 100%;
+    height: auto;
     text-align: center;
     padding: 20px;
     background: #35B88F;
