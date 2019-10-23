@@ -27,17 +27,51 @@
       </footer>
     </section>
 
-    <!-- Banner -->
-    <section id="banner">
-      <header>
-        <h3>
-          <blockquote>
-            I chose and my world was shaken... So what? The choice may have been
-            wrong, but the choosing never was
-          </blockquote>
-        </h3>
-      </header>
-      <cite>Stephen Sondheim</cite>
+    <!-- Banner - ADD CAROUSEL -->
+    <section id="banner" class="slideshow-container">
+      <div class="mySlides">
+        <header>
+          <h3>
+            <blockquote>
+              I chose and my world was shaken... So what? The choice may have
+              been wrong, but the choosing never was
+            </blockquote>
+          </h3>
+        </header>
+        <cite>Stephen Sondheim</cite>
+      </div>
+      <div class="mySlides">
+        <header>
+          <h3>
+            <blockquote>
+              Let's conspire to ignite/ All the souls that would die just to
+              feel alive...
+            </blockquote>
+          </h3>
+        </header>
+        <cite>"Starlight", Muse</cite>
+      </div>
+      <div class="mySlides">
+        <header>
+          <h3>
+            <blockquote>
+              Travel is fatal to prejudice, bigotry, and narrow-mindedness, and
+              many of our people need it sorely on these accounts.
+            </blockquote>
+          </h3>
+        </header>
+        <cite>Mark Twain</cite>
+      </div>
+
+      <!-- Next/prev buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </section>
 
     <!-- Feature 1 -->
@@ -272,6 +306,7 @@
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
+    <script src="assets/js/slideshow.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
